@@ -1,4 +1,5 @@
 # 💫 About Me:
+<h3 align="center">A passionate web developer from Guatemala</h3>
 👋 Hi, I'm Angel <br>
 🌱 I’m currently learning REACT, JavaScript<br>
 
