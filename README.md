@@ -1,5 +1,5 @@
 # 💫 About Me:
-👋 Hi, I'm Angel
+👋 Hi, I'm Angel <br>
 🌱 I’m currently learning REACT, JavaScript<br>
 
 
