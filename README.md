@@ -1,4 +1,5 @@
 # 💫 About Me:
+<h1 align="center">Hi 👋, I'm Angel</h1>
 🌱 I’m currently learning REACT, JavaScript<br>
 
 
