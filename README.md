@@ -19,7 +19,10 @@
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 ### 🎧 Spotify Playing
 
-[<img src="spotify-github-8lyl-h57l8cl0o-asique-4.vercel.app" alt="asique-4 spotify playing" width="350" />]()
+[![Spotify](https://spotify-playing-drab.vercel.app/api/spotify)](https://open.spotify.com/user/ASique)
+
+
+
 
 ![snake gif](https://github.com/ASique-4/ASique-4/blob/output/github-contribution-grid-snake.svg)
 
