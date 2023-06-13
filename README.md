@@ -18,7 +18,7 @@
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 ### 🎧 Spotify Playing
-  [![Spotify](https://spotify-playing-drab.vercel.app/api/spotify)](https://open.spotify.com/user/ASique)
+[![Spotify](https://spotify-playing-drab.vercel.app/api/spotify)](https://open.spotify.com/user/cpz68ddnoc9wu9a6rv7h8pde4)
 
 
 
