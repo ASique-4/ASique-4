@@ -4,17 +4,31 @@ import html
 import json
 import os
 import urllib.parse
+import urllib.error
 import urllib.request
 
-CLIENT_ID = os.environ["SPOTIFY_CLIENT_ID"]
-CLIENT_SECRET = os.environ["SPOTIFY_CLIENT_SECRET"]
-REFRESH_TOKEN = os.environ["SPOTIFY_REFRESH_TOKEN"]
+def secret(name):
+    # quita espacios, saltos de línea y comillas pegadas por error
+    return os.environ.get(name, "").strip().strip('"').strip("'").strip()
+
+
+CLIENT_ID = secret("SPOTIFY_CLIENT_ID")
+CLIENT_SECRET = secret("SPOTIFY_CLIENT_SECRET")
+REFRESH_TOKEN = secret("SPOTIFY_REFRESH_TOKEN")
+
+for _n, _v in [("SPOTIFY_CLIENT_ID", CLIENT_ID), ("SPOTIFY_CLIENT_SECRET", CLIENT_SECRET),
+               ("SPOTIFY_REFRESH_TOKEN", REFRESH_TOKEN)]:
+    print(f"{_n}: {'VACÍO' if not _v else f'{len(_v)} caracteres'}")
 
 
 def http(url, data=None, headers=None):
     req = urllib.request.Request(url, data=data, headers=headers or {})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        return r.status, r.read()
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            return r.status, r.read()
+    except urllib.error.HTTPError as e:
+        raise SystemExit(f"Spotify respondió {e.code} en {url.split('?')[0]}: "
+                         f"{e.read().decode(errors='replace')}")
 
 
 def access_token():
