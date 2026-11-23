@@ -24,7 +24,6 @@
 
 
 
-![snake gif](https://github.com/ASique-4/ASique-4/blob/output/github-contribution-grid-snake.svg)
-
+![snake](https://raw.githubusercontent.com/ASique-4/ASique-4/output/github-contribution-grid-snake-dark.svg)
 
 
